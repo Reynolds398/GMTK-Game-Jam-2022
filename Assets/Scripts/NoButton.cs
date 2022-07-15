@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class YesButton : MonoBehaviour
+public class NoButton : MonoBehaviour
 {
+    private Customer customer;
+
     // Start is called before the first frame update
     void Start()
     {
+        customer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,6 @@ public class YesButton : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("Workshop");
+        customer.angry = true;
     }
 }

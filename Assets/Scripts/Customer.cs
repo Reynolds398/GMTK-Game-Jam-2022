@@ -5,7 +5,7 @@ using UnityEngine;
 public class Customer : MonoBehaviour
 {
     private Animator customerAnim;
-    [SerializeField] private bool satisfied;
+    public bool satisfied, angry;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class Customer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (satisfied)
+        if (satisfied || angry)
         {
             customerAnim.SetTrigger("Leave");
         }
