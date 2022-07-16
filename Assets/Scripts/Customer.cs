@@ -6,6 +6,7 @@ public class Customer : MonoBehaviour
 {
     private Animator customerAnim;
     private NoButton noButton;
+    [SerializeField] private GameObject angryFace, neutralFace, happyFace;
 
     public bool satisfied, angry;
 
@@ -22,6 +23,13 @@ public class Customer : MonoBehaviour
     {
         if (satisfied || angry)
         {
+            neutralFace.SetActive(false);
+
+            if (angry)
+            {
+                happyFace.SetActive(false);
+            }
+
             customerAnim.SetTrigger("Leave");
         }
     }
