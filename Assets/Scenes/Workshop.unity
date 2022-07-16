@@ -705,7 +705,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 76e0c4b0e3355404b9e9770f300b4cfc, type: 3}
   m_Color: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
   m_FlipX: 0
@@ -884,6 +884,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423623096}
+  - component: {fileID: 423623097}
+  - component: {fileID: 423623098}
   m_Layer: 0
   m_Name: Dice Button
   m_TagString: Untagged
@@ -898,7 +900,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423623095}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -908,6 +910,47 @@ Transform:
   m_Father: {fileID: 485657052}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &423623097
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423623095}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12360501, y: -1.110087}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2798252, y: 3.220174}
+  m_EdgeRadius: 0
+--- !u!114 &423623098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423623095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d83acb2b24e94003a4caa3fd0b465e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialMenu: {fileID: 485657053}
+  selected: 0
+  id: 2
 --- !u!1 &485657050
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485657052}
   - component: {fileID: 485657051}
+  - component: {fileID: 485657053}
   m_Layer: 0
   m_Name: Materials Option
   m_TagString: Untagged
@@ -990,12 +1034,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1009224880}
-  - {fileID: 1219364914}
-  - {fileID: 423623096}
   - {fileID: 1841716400}
+  - {fileID: 423623096}
+  - {fileID: 1219364914}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485657053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485657050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2245d732c03a2429cbc204508c18a753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodSelected: 0
+  metalSelected: 0
+  classicSelected: 1
+  trigger: 0
+  requestId: 0
+  buttons:
+  - {fileID: 1841716399}
+  - {fileID: 423623095}
+  - {fileID: 1219364913}
+  clickableButtons:
+  - {fileID: 564151500}
+  - {fileID: 1367098487}
+  - {fileID: 1178856731}
 --- !u!1 &564151500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1137,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 09a694b681ae64a8185a0167529815b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1911,7 +1980,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 06aee13efa4b84fdeaed22473026d2a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1932,6 +2001,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219364914}
+  - component: {fileID: 1219364915}
+  - component: {fileID: 1219364916}
   m_Layer: 0
   m_Name: Metal Button
   m_TagString: Untagged
@@ -1954,8 +2025,49 @@ Transform:
   - {fileID: 1974425177}
   - {fileID: 1178856732}
   m_Father: {fileID: 485657052}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1219364915
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219364913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.381113, y: -1.110087}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1699543, y: 3.220174}
+  m_EdgeRadius: 0
+--- !u!114 &1219364916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219364913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d83acb2b24e94003a4caa3fd0b465e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialMenu: {fileID: 485657053}
+  selected: 0
+  id: 3
 --- !u!1 &1291907177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,7 +2342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1367098488
 Transform:
   m_ObjectHideFlags: 0
@@ -2286,7 +2398,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 9367778d668c742ed9d00e718f829eaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2479,6 +2591,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1841716400}
+  - component: {fileID: 1841716401}
+  - component: {fileID: 1841716402}
   m_Layer: 0
   m_Name: Wood Button
   m_TagString: Untagged
@@ -2493,7 +2607,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841716399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2501,8 +2615,49 @@ Transform:
   - {fileID: 297752139}
   - {fileID: 564151501}
   m_Father: {fileID: 485657052}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1841716401
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841716399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.2712417, y: -1.110087}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2248926, y: 3.220174}
+  m_EdgeRadius: 0
+--- !u!114 &1841716402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841716399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d83acb2b24e94003a4caa3fd0b465e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialMenu: {fileID: 485657053}
+  selected: 0
+  id: 1
 --- !u!1 &1918495920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,7 +2730,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 81ebe6716f3f64335a257640c6359251, type: 3}
   m_Color: {r: 0.6431373, g: 0.6431373, b: 0.6431373, a: 1}
   m_FlipX: 0
@@ -2827,7 +2982,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7bd4e25cf56ae48f68a611df2be147c5, type: 3}
   m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
   m_FlipX: 0
