@@ -967,7 +967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1280833171
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1690,6 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de476e50b8d974c7c843584d97d2a878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requirement: {fileID: 1280833170}
 --- !u!61 &1866403049
 BoxCollider2D:
   m_ObjectHideFlags: 0

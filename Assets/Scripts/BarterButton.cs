@@ -5,6 +5,7 @@ using UnityEngine;
 public class BarterButton : MonoBehaviour
 {
     private Animator drawerAnim;
+    public GameObject requirement;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +26,12 @@ public class BarterButton : MonoBehaviour
         {
             drawerAnim.SetBool("Closed", false);
             drawerAnim.SetTrigger("Button_Clicked");
+            requirement.SetActive(false);
         } else
         {
             drawerAnim.SetBool("Closed", true);
             drawerAnim.SetTrigger("Button_Clicked");
+            requirement.SetActive(true);
         }
     }
 }
