@@ -848,7 +848,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749bc438df1bc4359bd27c438e9e01c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 1
   unclickedButton: {fileID: 1088400937}
+  amountText: {fileID: 1633529281}
 --- !u!61 &417480329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1626,7 +1628,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749bc438df1bc4359bd27c438e9e01c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 2
   unclickedButton: {fileID: 1946309945}
+  amountText: {fileID: 1633529281}
 --- !u!61 &1021657391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1710,7 +1714,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: acb4d22237dac4a14a1611a48247f3a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
