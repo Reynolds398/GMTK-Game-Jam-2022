@@ -122,7 +122,7 @@ TextureImporter:
         x: 133
         y: 1758
         width: 1403
-        height: 722
+        height: 615
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f1ebf24eccc6459f8c39ada572d86e5
-      internalID: 287613069
+      spriteID: 164f07c361f0244fab68a5fe86d81003
+      internalID: 121901481
       vertices: []
       indices: 
       edges: []
@@ -151,29 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab80072ac73bd43438729c46fd6ea006
-      internalID: 1130696686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Workshop Sprite_2
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 0
-        width: 1038
-        height: 676
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f33c4ebbf00f4543aa9e8c944f639ca
-      internalID: -1192230697
+      spriteID: 962a642bcb52d4ed8bf4263aeb06feb3
+      internalID: 2067329463
       vertices: []
       indices: 
       edges: []
@@ -189,9 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Workshop Sprite_0: 287613069
-      Workshop Sprite_2: -1192230697
-      Workshop Sprite_1: 1130696686
+      Workshop Sprite_0: 121901481
+      Workshop Sprite_1: 2067329463
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
