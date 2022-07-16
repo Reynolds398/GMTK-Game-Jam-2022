@@ -9,7 +9,7 @@ public class NoButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        customer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
+        
     }
 
     // Update is called once per frame
@@ -21,5 +21,10 @@ public class NoButton : MonoBehaviour
     private void OnMouseDown()
     {
         customer.angry = true;
+    }
+
+    public void FindCustomer()
+    {
+        customer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
     }
 }
