@@ -285,9 +285,9 @@ MonoBehaviour:
   dialogue:
     name: 'Radio:'
     sentences:
-    - "After a difficult session, world peace has been solved through gambling, brought
-      from a store next to a rather mundane one. We can only hope that more shops
-      like that pop up\u2026"
+    - 'After a difficult session, world peace has been solved through gambling, brought
+      from a store next to a rather mundane one. '
+    - "We can only hope that more shops like that pop up\u2026"
 --- !u!1 &299726993
 GameObject:
   m_ObjectHideFlags: 0
