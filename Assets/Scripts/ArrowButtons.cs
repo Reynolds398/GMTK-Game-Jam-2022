@@ -42,6 +42,14 @@ public class ArrowButtons : MonoBehaviour
         if (id == 1 && count < max) // Up Arrow
         {
             count++;
+
+            GameObject ball = ObjectPooler.SharedInstance.GetPooledObject();
+            if (ball != null)
+            {
+                ball.transform.position = new Vector3(1.7f, 4, 0);
+                //ball.transform.rotation = turret.transform.rotation;
+                ball.SetActive(true);
+            }
         }
 
         if (id == 2 && count > 0) // Down Arrow

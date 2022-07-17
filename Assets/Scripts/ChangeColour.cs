@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class CustomizationManager : MonoBehaviour
+public class ChangeColour : MonoBehaviour
 {
-    [SerializeField] private Material materialPref;
-
     // Start is called before the first frame update
     void Start()
     {
