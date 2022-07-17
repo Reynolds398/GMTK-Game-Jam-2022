@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
-            SceneManager.LoadScene("Store");
+            SceneManager.LoadScene("End Scene");
             return;
         }
 
