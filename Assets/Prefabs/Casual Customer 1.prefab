@@ -157,6 +157,7 @@ MonoBehaviour:
   happyFace: {fileID: 6995641365762067292}
   satisfied: 0
   angry: 0
+  left: 0
 --- !u!1 &6995641365762067292
 GameObject:
   m_ObjectHideFlags: 0

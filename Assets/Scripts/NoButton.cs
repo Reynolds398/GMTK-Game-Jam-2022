@@ -21,6 +21,7 @@ public class NoButton : MonoBehaviour
     private void OnMouseDown()
     {
         customer.angry = true;
+        GameObject.Find("GameManager").GetComponent<GameManager>().left = true;
     }
 
     public void FindCustomer()

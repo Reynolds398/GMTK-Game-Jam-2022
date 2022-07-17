@@ -15,7 +15,7 @@ public class Customer : MonoBehaviour
     {
         customerAnim = GetComponent<Animator>();
         noButton = GameObject.Find("No Button").GetComponent<NoButton>();
-        noButton.FindCustomer();
+        noButton.FindCustomer(); // Make No find this customer
     }
 
     // Update is called once per frame

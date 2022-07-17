@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private static int totalDays = 0;
 
     public GameObject customer;
+    public bool left = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
             CreateCustomer();
         }
 
-        if (customerLeft == 0)
+        if (customerLeft == 0 && left)
         {
             StartCoroutine(LoadTransition());
             totalDays++;
@@ -39,12 +40,13 @@ public class GameManager : MonoBehaviour
     private void CreateCustomer()
     {
         customerLeft--;
+        left = false;
         Instantiate(customer);
     }
 
     IEnumerator LoadTransition()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("Transition");
     }
 }
