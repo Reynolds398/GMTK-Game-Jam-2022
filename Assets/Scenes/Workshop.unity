@@ -862,6 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUp: {fileID: 1909007873}
+  customize: {fileID: 0}
 --- !u!58 &228142355
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3085,7 +3086,7 @@ GameObject:
   - component: {fileID: 1692945264}
   m_Layer: 0
   m_Name: Customization Manager
-  m_TagString: Ball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3103,6 +3104,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materialPref: {fileID: 485657053}
+  colourPref: {fileID: 585961262}
+  allDices:
+  - {fileID: 6350699238596682014, guid: 275166314cfb54813bb45521b2b112e7, type: 3}
+  - {fileID: 7969972677472582041, guid: a81fee6d8396e4c6f927558effc5c644, type: 3}
+  - {fileID: 1489488730792487482, guid: 6ce82f372272648d7a44e2a84a0a5a0e, type: 3}
+  - {fileID: 7153309342103541483, guid: 2c51bd7e51461493caa54459a46820c6, type: 3}
+  - {fileID: 1419439660066076115, guid: c7c8e5353bf93405586011dc133b5c50, type: 3}
+  - {fileID: 8894665349421157621, guid: 8d6cb665da22541088a0a86515ef5470, type: 3}
+  - {fileID: 2784680483037025174, guid: e144b25b4c4174a3ea1e81a8b39dbd4a, type: 3}
+  - {fileID: 8108180324069042976, guid: f0871fb393192464bbae242f64c8cb30, type: 3}
+  - {fileID: 78972651945365671, guid: 92ea11a7357ff46c08e195abc35675e4, type: 3}
+  - {fileID: 451161236842846435, guid: 272592bb39d1546b59c245c3e41b1bfa, type: 3}
+  - {fileID: 8629508395533729825, guid: 40fc24346b253469d912bc7fd3ac638b, type: 3}
+  - {fileID: 7281728052309391058, guid: aa6dae95e94d942b3b5adbc8a800532d, type: 3}
 --- !u!4 &1692945265
 Transform:
   m_ObjectHideFlags: 0
@@ -3111,7 +3126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692945263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7006577, y: 0.015155613, z: -0.053013343}
+  m_LocalPosition: {x: -0.01, y: -0.03, z: -0.053013343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangeColour : MonoBehaviour
 {
-    // Yellow = 1, Blue = 2, Red = 3
+    // Default = 0, Yellow = 1, Blue = 2, Red = 3
     public int colourId = 0;
     private Color empty = new Color(0, 0, 0, 0.3921569f);
     private Color red = new Color(0.9921569f, 0.145098f, 0.05098039f, 0.5882353f);
