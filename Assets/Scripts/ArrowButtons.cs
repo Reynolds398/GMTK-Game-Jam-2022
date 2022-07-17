@@ -7,7 +7,7 @@ public class ArrowButtons : MonoBehaviour
 {
     private bool held = false;
     private int max = 5;
-    private static int count = 0;
+    public static int count = 0;
 
     [SerializeField] private int id;
     [SerializeField] private GameObject unclickedButton;

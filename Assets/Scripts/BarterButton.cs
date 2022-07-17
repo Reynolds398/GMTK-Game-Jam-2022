@@ -5,6 +5,7 @@ using UnityEngine;
 public class BarterButton : MonoBehaviour
 {
     private Animator drawerAnim, requirementAnim;
+    public static int previousDice = -1;
 
     public GameObject requirement;
 
@@ -18,7 +19,10 @@ public class BarterButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (previousDice == -1)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnMouseDown()

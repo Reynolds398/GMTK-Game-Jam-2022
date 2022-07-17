@@ -7,15 +7,24 @@ public class GameManager : MonoBehaviour
 {
     private int startingDay = 0;
     private int currentCustomer = 0;
-    private int customerLeft = 5;
+    private static int customerLeft;
+    [SerializeField] private List<GameObject> customers;
     private static int totalDays = 0;
+    private static bool firstTime = true;
 
     public GameObject customer;
-    public bool left = false;
+    public static bool left = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        if (firstTime)
+        {
+            customerLeft = customers.Count;
+            firstTime = false;
+        }
+        
         CreateCustomer();
     }
 
@@ -24,9 +33,11 @@ public class GameManager : MonoBehaviour
     {
         currentCustomer = GameObject.FindGameObjectsWithTag("Customer").Length;
 
-        if (startingDay == totalDays && currentCustomer == 0 && customerLeft != 0)
+        if (startingDay == totalDays && currentCustomer == 0 && customerLeft != 0 && left == true)
         {
+            customerLeft--;
             CreateCustomer();
+            left = false;
         }
 
         if (customerLeft == 0 && left)
@@ -37,11 +48,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     private void CreateCustomer()
     {
-        customerLeft--;
-        left = false;
-        Instantiate(customer);
+        Instantiate(customers[customerLeft - 1]);
     }
 
     IEnumerator LoadTransition()

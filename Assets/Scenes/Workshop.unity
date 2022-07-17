@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 59883618}
   - component: {fileID: 59883617}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Hiding Balls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1361,7 +1361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485657050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3, y: -0.25, z: 0}
+  m_LocalPosition: {x: -5.58, y: -0.25, z: 0}
   m_LocalScale: {x: 0.49172145, y: 0.46234846, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1657,7 +1657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588890052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3, y: 3.34, z: 0}
+  m_LocalPosition: {x: -5.58, y: 3.34, z: 0}
   m_LocalScale: {x: 0.4927432, y: 0.48057142, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2220,7 +2220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082308057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.51, y: -3.25, z: 0}
+  m_LocalPosition: {x: -5.79, y: -3.25, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

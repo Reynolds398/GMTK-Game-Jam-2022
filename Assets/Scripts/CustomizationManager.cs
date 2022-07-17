@@ -15,7 +15,7 @@ public class CustomizationManager : MonoBehaviour
     [SerializeField] public static ArrowButtons loadTotal;
 
     [SerializeField] private GameObject[] allDices = new GameObject[12];
-    private static int diceId = 0;
+    public static int diceId = 0;
 
     // Start is called before the first frame update
     void Start()

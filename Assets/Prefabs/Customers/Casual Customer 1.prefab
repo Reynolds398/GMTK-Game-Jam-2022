@@ -95,6 +95,9 @@ GameObject:
   - component: {fileID: 6280549827551918474}
   - component: {fileID: 4425010536632192224}
   - component: {fileID: -2259922334397157711}
+  - component: {fileID: -6716881717137379819}
+  - component: {fileID: -1725532179658353882}
+  - component: {fileID: 60829144687610860}
   m_Layer: 0
   m_Name: Casual Customer 1
   m_TagString: Customer
@@ -155,9 +158,49 @@ MonoBehaviour:
   angryFace: {fileID: 9221438826355507119}
   neutralFace: {fileID: 941626279748822527}
   happyFace: {fileID: 6995641365762067292}
-  satisfied: 0
-  angry: 0
-  left: 0
+--- !u!114 &-6716881717137379819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009193525180247122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d150e7216764a20a12e69b08121019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - "Uh Hi, one classic red dice please\u2026"
+  - Ah great, thanks.
+  - "\u2026"
+--- !u!114 &-1725532179658353882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009193525180247122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5517fd1d4bc94bd7b9bc471c99a9e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  request: 2
+  loadAmount: -1
+--- !u!114 &60829144687610860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009193525180247122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e528df0aea0df4414b8407627ab7a21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rollRequirement: 4
 --- !u!1 &6995641365762067292
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6995641365762067292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.109999835, y: -0.17, z: 0}
+  m_LocalPosition: {x: -0.08, y: -0.16, z: 0}
   m_LocalScale: {x: 0.35795194, y: 0.32063353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -267,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9221438826355507119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.069999695, y: -0.14, z: 0}
+  m_LocalPosition: {x: -0.07, y: -0.17, z: 0}
   m_LocalScale: {x: 0.35795194, y: 0.32063353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
